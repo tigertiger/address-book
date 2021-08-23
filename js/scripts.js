@@ -44,10 +44,12 @@ Contact.prototype.updateName = function(input) {
   return this.firstName;
 }
 
-// Contact.prototype.updateAll = function(input) {
-//   this.contact = input;
-//   return this.firstName;
-// }
+Contact.prototype.updateAll = function(firstName, lastName, phoneNumber, emailAddress) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.phoneNumber = phoneNumber;
+  this.emailAddress = emailAddress;
+  }
 
 let addressBook = new AddressBook();
 let contact = new Contact("Ada", "Lovelace", "503-555-1111", "ada@geocities.com");
